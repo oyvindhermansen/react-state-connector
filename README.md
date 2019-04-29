@@ -27,7 +27,7 @@ function App() {
 
 // Use StateContext together with useContext to access your global state
 function Counter() {
-  const {state, setState} = useContext(StateContext);
+  const { state, setState } = useContext(StateContext);
 
   return (
     <div>
