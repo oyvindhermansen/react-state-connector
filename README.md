@@ -2,8 +2,6 @@
 
 Simple global state management with native React context
 
-# react-state-connector
-
 ## Usage
 
 ```tsx
