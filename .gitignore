@@ -1,0 +1,12 @@
+
+#folder
+dist/
+node_modules/
+coverage/
+lib/
+storybook-static/
+
+.idea
+.nyc_output
+
+yarn-error.log
