@@ -40,7 +40,8 @@
     "typescript",
     "npm",
     "state",
-    "context"
+    "context",
+    "react"
   ],
   "author": "Øyvind Hermansen <oyvindher@gmail.com>",
   "license": "MIT",
@@ -85,6 +86,5 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
-  },
-  "dependencies": {}
+  }
 }
