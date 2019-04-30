@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { useState, createContext, SetStateAction } from 'react';
 
-interface DefaultContextValues<T> {
+export interface DefaultContextValues<T> {
   state: T;
   setState: (nextState: SetStateAction<T>) => void;
 }
 
-interface CreateState<T> {
+export interface CreateState<T> {
   StateContext: React.Context<DefaultContextValues<T>>;
   StateProvider: (props: JSX.ElementChildrenAttribute) => JSX.Element;
 }
@@ -16,6 +16,15 @@ const defaultContextValues: DefaultContextValues<any> = {
   setState: (nextState) => {}
 };
 
+/**
+ * @param defaultState The global state of your application
+ *
+ * createState gives you the possibility to access and alter your global state using
+ * React context under the hood.
+ *
+ * @returns StateContext
+ * @returns StateProvider
+ */
 export default function createState<T>(defaultState: T): CreateState<T> {
   const StateContext = createContext(defaultContextValues);
 

@@ -7,12 +7,12 @@ Simple global state management with native React context
 ```tsx
 import createState from '@oyvindher/react-state-connector';
 
-interface MyGlobalState {
+interface MyGlobalStateInterface {
   counter: number;
 }
 
 // Export as a singleton
-const { StateProvider, StateContext } = createState<MyGlobalState>(
+const { StateProvider, StateContext } = createState<MyGlobalStateInterface>(
   counter: 0
 )
 
